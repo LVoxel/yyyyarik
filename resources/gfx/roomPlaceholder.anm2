@@ -1,0 +1,37 @@
+<AnimatedActor>
+	<Info CreatedBy="Unknown" CreatedOn="5/23/2021 8:13:08 PM" Version="43" Fps="30"/>
+	<Content>
+		<Spritesheets>
+			<Spritesheet Path="effects\effect_hintmark.png" Id="0"/>
+		</Spritesheets>
+		<Layers>
+			<Layer Name="Pentagram3" Id="0" SpritesheetId="0"/>
+		</Layers>
+		<Nulls/>
+		<Events/>
+	</Content>
+	<Animations DefaultAnimation="Idle">
+		<Animation Name="Idle" FrameNum="119" Loop="true">
+			<RootAnimation>
+				<Frame XPosition="0" YPosition="0" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false"/>
+			</RootAnimation>
+			<LayerAnimations>
+				<LayerAnimation LayerId="0" Visible="true">
+					<Frame XPosition="0" YPosition="0" XPivot="128" YPivot="128" XCrop="0" YCrop="0" Width="256" Height="256" XScale="15" YScale="15" Delay="18" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="75" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="true"/>
+					<Frame XPosition="0" YPosition="0" XPivot="128" YPivot="128" XCrop="0" YCrop="0" Width="256" Height="256" XScale="12" YScale="12" Delay="20" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="75" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="true"/>
+					<Frame XPosition="0" YPosition="0" XPivot="128" YPivot="128" XCrop="0" YCrop="0" Width="256" Height="256" XScale="10" YScale="10" Delay="13" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="75" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="true"/>
+					<Frame XPosition="0" YPosition="0" XPivot="128" YPivot="128" XCrop="0" YCrop="0" Width="256" Height="256" XScale="9.25" YScale="9.25" Delay="10" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="75" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="true"/>
+					<Frame XPosition="0" YPosition="0" XPivot="128" YPivot="128" XCrop="0" YCrop="0" Width="256" Height="256" XScale="9" YScale="8.75" Delay="2" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="75" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="true"/>
+					<Frame XPosition="0" YPosition="0" XPivot="128" YPivot="128" XCrop="0" YCrop="0" Width="256" Height="256" XScale="8.75" YScale="8.75" Delay="2" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="75" RedOffset="50" GreenOffset="50" BlueOffset="50" Rotation="0" Interpolated="true"/>
+					<Frame XPosition="0" YPosition="0" XPivot="128" YPivot="128" XCrop="0" YCrop="0" Width="256" Height="256" XScale="8.75" YScale="8.75" Delay="2" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="75" RedOffset="25" GreenOffset="25" BlueOffset="25" Rotation="0" Interpolated="true"/>
+					<Frame XPosition="0" YPosition="0" XPivot="128" YPivot="128" XCrop="0" YCrop="0" Width="256" Height="256" XScale="9.25" YScale="9.25" Delay="8" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="75" RedOffset="25" GreenOffset="10" BlueOffset="10" Rotation="0" Interpolated="true"/>
+					<Frame XPosition="0" YPosition="0" XPivot="128" YPivot="128" XCrop="0" YCrop="0" Width="256" Height="256" XScale="10" YScale="10" Delay="20" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="75" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="true"/>
+					<Frame XPosition="0" YPosition="0" XPivot="128" YPivot="128" XCrop="0" YCrop="0" Width="256" Height="256" XScale="12" YScale="12" Delay="18" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="75" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="true"/>
+					<Frame XPosition="0" YPosition="0" XPivot="128" YPivot="128" XCrop="0" YCrop="0" Width="256" Height="256" XScale="15" YScale="15" Delay="6" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="75" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="true"/>
+				</LayerAnimation>
+			</LayerAnimations>
+			<NullAnimations/>
+			<Triggers/>
+		</Animation>
+	</Animations>
+</AnimatedActor>
