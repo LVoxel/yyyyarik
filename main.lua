@@ -67,8 +67,4 @@ if Placeholder_secrets == true then
 end
 
 
-local json = require("json")
-    print("mlevel.WFA is ok")
-
-
 print("WARNING: If you start the game with another mod that adds new items, it will cause minor problems")
