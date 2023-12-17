@@ -16,7 +16,7 @@ function mod:onBob(entity)
 	local entity = entity:ToNPC()
 	local data = entity:GetData()
 	
-	sprite = entity:GetSprite();
+	local sprite = entity:GetSprite();
 	if data.Position == nil then data.Position = entity.Position end
 	entity.Velocity = data.Position - entity.Position
 end

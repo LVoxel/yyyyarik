@@ -26,7 +26,7 @@ function SmilikTransition(state)
 	return #SmilikChain
 end
 
-function playerToNum(player)
+local function playerToNum(player)
 	for num = 0, Game():GetNumPlayers()-1 do
 		if GetPtrHash(player) == GetPtrHash(Isaac.GetPlayer(num)) then return num end
 	end
@@ -40,7 +40,7 @@ function mod:onSmilik(entity)
 	local entity = entity:ToNPC()
 	local data = entity:GetData()
 	--player = Isaac.GetPlayer(0)
-	sprite = entity:GetSprite();
+	local sprite = entity:GetSprite();
 	if data.Position == nil then data.Position = entity.Position end
 	entity.Velocity = data.Position - entity.Position
 	

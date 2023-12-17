@@ -47,8 +47,8 @@ end
 function mod:onPiggy(entity)
 	local entity = entity:ToNPC()
 	local data = entity:GetData()
-	player = Isaac.GetPlayer(0)
-	sprite = entity:GetSprite();
+	local player = Isaac.GetPlayer(0)
+	local sprite = entity:GetSprite();
 	if data.Position == nil then data.Position = entity.Position end
 	entity.Velocity = data.Position - entity.Position
 
