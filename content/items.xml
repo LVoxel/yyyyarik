@@ -5,4 +5,5 @@
 <passive name="Milk with honey" id="908" description="Soft medicine and love of nature" gfx="milk_with_hohey.png" maxhearts="6" hearts="12" cache="all" />
 <active name="Wildlife Camera" id="0" description="CORRUPT ALL!!!" quality="2" maxcharges="6" gfx="collectible_wildlifecamera.png"/>
 <passive name="Ama da one" id="909" description="ONE TAPS" gfx="pixel_glasses.png" cache="all" />
+<passive name="TESTUM" description="TESTUM" gfx="testum.png" cache="all" />
 </items>

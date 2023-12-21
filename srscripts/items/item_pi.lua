@@ -17,17 +17,36 @@ end
 --
 --------------------------------------------------------PI--------------------------------------------------------
 --
-function sexyrooms:onPickup(player, cacheFlag)
-	if player:HasCollectible(sexyrooms.PI) then
-		if cacheFlag == CacheFlag.CACHE_DAMAGE then
-			player.Damage = player.Damage + PiStats.DAMAGE * player:GetCollectibleNum(sexyrooms.PI)
+-- local function onPickup()
+-- 	if player:HasCollectible(sexyrooms.PI) then
+-- 		if cacheFlag == CacheFlag.CACHE_DAMAGE then
+-- 			player.Damage = player.Damage + PiStats.DAMAGE * player:GetCollectibleNum(sexyrooms.PI)
 			
-		elseif cacheFlag == CacheFlag.CACHE_FIREDELAY then
-			local newDelay = tearsUp(player.MaxFireDelay, PiStats.TEARS * player:GetCollectibleNum(sexyrooms.PI))
-			player.MaxFireDelay = newDelay
+-- 		elseif cacheFlag == CacheFlag.CACHE_FIREDELAY then
+-- 			local newDelay = tearsUp(player.MaxFireDelay, PiStats.TEARS * player:GetCollectibleNum(sexyrooms.PI))
+-- 			player.MaxFireDelay = newDelay
+-- 		end
+-- 	end
+-- end
+
+function sexyrooms:onPickup(player, cacheFlag) --function onPickup(player, cacheFlag) (20)
+    local playerCount = Game():GetNumPlayers()
+
+    for playerIndex = 0, playerCount - 1 do
+        player = Isaac.GetPlayer(playerIndex)
+		if player:HasCollectible(sexyrooms.PI) then
+			if cacheFlag == CacheFlag.CACHE_DAMAGE then
+				player.Damage = player.Damage + PiStats.DAMAGE * player:GetCollectibleNum(sexyrooms.PI)
+				
+			elseif cacheFlag == CacheFlag.CACHE_FIREDELAY then
+				local newDelay = tearsUp(player.MaxFireDelay, PiStats.TEARS * player:GetCollectibleNum(sexyrooms.PI))
+				player.MaxFireDelay = newDelay
+			end
 		end
-	end
+    end
 end
+
+
 
 sexyrooms:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, sexyrooms.onPickup)
 
