@@ -77,44 +77,44 @@ function sexyrooms:onUpdate(player)
 		if player:HasCollectible(sexyrooms.AMA_DA_ONE) and music:GetCurrentMusicID() == Music.MUSIC_BOSS_RUSH or music:GetCurrentMusicID() == Music.MUSIC_BOSS or music:GetCurrentMusicID() == Music.MUSIC_BOSS2 or music:GetCurrentMusicID() == Music.MUSIC_BOSS3 or music:GetCurrentMusicID() == Music.MUSIC_VOID_BOSS or music:GetCurrentMusicID() == Music.MUSIC_HUSH_BOSS or music:GetCurrentMusicID() == Music.MUSIC_ISAAC_BOSS or music:GetCurrentMusicID() == Music.MUSIC_SATAN_BOSS then
 			if music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_4 and player:HasCollectible(sexyrooms.AMA_DA_ONE) then
 				--roll = 80
-				music:Play(Music.AMA_DA_ONE_4, 0.1)
+				music:Play(Music.AMA_DA_ONE_4, 0.4)
 			end
 			
 		
 		elseif player:HasCollectible(sexyrooms.AMA_DA_ONE) and roll == 1 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_2 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_3 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_4 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_5 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_6 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_BOSS then
 			if music:GetCurrentMusicID() ~= Music.AMA_DA_ONE then
 				roll = 1
-				music:Play(Music.AMA_DA_ONE, 0.1)
+				music:Play(Music.AMA_DA_ONE, 0.4)
 			end
 			
 		elseif player:HasCollectible(sexyrooms.AMA_DA_ONE) and roll == 2 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_3 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_4 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_5 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_6 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_BOSS then
 			if music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_2 then
 				roll = 2
-				music:Play(Music.AMA_DA_ONE_2, 0.1)
+				music:Play(Music.AMA_DA_ONE_2, 0.4)
 			end
 			
 		elseif player:HasCollectible(sexyrooms.AMA_DA_ONE) and roll == 3 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_2 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_4 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_5 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_6 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_BOSS then
 			if music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_3 then
 				roll = 3
-				music:Play(Music.AMA_DA_ONE_3, 0.1)
+				music:Play(Music.AMA_DA_ONE_3, 0.4)
 			end
 			
 		elseif player:HasCollectible(sexyrooms.AMA_DA_ONE) and roll == 4 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_2 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_3 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_5 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_6 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_BOSS then
 			if music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_4 then
 				roll = 4
-				music:Play(Music.AMA_DA_ONE_4, 0.1)
+				music:Play(Music.AMA_DA_ONE_4, 0.4)
 			end
 		
 		elseif player:HasCollectible(sexyrooms.AMA_DA_ONE) and roll == 5 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_2 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_3 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_4 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_6 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_BOSS then
 			if music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_5 then
 				roll = 5
-				music:Play(Music.AMA_DA_ONE_5, 0.1)
+				music:Play(Music.AMA_DA_ONE_5, 0.4)
 			end
 		
 		elseif player:HasCollectible(sexyrooms.AMA_DA_ONE) and roll == 6 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_2 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_3 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_4 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_5 and music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_BOSS then
 			if music:GetCurrentMusicID() ~= Music.AMA_DA_ONE_6 then
 				roll = 6
-				music:Play(Music.AMA_DA_ONE_6, 0.1)
+				music:Play(Music.AMA_DA_ONE_6, 0.4)
 			end
 		end
 		
